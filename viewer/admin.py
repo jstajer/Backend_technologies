@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from viewer.models import *
+
+admin.site.register(Genre)
+admin.site.register(Movie)
