@@ -53,4 +53,4 @@ V souboru ./hollymovies/settings.py přidáme aplikaci viewwer do seznamu INSTAL
 - všichni v týmu musí mít stejnou verzi Djanga (i ostatních balíčků)
 - vytvořit readme.md soubor s popisem projektu, 
 může obsahovat i obrázky (ER diagram, screenshoty,...)
-- vytvořit git repozitář a sdílet v týmu (settings -> Collaborators)
+- vytvořit git repozitář a sdílet v týmu (settings -> Collaborators
