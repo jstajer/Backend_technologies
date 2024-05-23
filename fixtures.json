@@ -1,11 +1,4 @@
-[
-  {
-    "model": "viewer.genre",
-    "pk": 1,
-    "fields": {
-      "name": "Horror"
-    }
-  },
+[{"model": "viewer.genre", "pk": 1, "fields": {"name": "Horror"}},
   {
     "model": "viewer.genre",
     "pk": 2,
