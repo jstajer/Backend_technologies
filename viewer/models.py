@@ -5,6 +5,9 @@ from django.db.models import *
 class Genre(Model):
     name = CharField(max_length=16, null=False, blank=False)
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return f"<Genre: {self.name}"
 
@@ -16,6 +19,9 @@ class Movie(Model):
     released = DateField()
     description = TextField()
     created = DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['title']
 
     def __repr__(self):
         return (f"<Movie: {self.title}>")
