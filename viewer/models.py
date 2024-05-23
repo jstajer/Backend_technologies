@@ -9,7 +9,7 @@ class Genre(Model):
         ordering = ['name']
 
     def __str__(self):
-        return f"<Genre: {self.name}"
+        return f" {self.name}"
 
 
 class Movie(Model):
