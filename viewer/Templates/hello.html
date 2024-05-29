@@ -3,12 +3,14 @@
 <head>
     <title>Hello, {{ name }}</title>
 </head>
-    <body>
-        <h1>Welcome to HollyMovies!</h1>
+<body>
+    <h1>Welcome to HollyMovies!</h1>
+    <ul>
         {% for adjective in adjectives %}
             {% if adjective != 'cruel' %}
-                <p>This is a {{ adjective }} world...</p>
+                <li>{{ adjective }}</li>
             {% endif %}
         {% endfor %}
-    </body>
+    </ul>
+</body>
 </html>
