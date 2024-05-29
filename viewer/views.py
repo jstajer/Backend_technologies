@@ -153,3 +153,22 @@ class GenreTemplateView(TemplateView):
         context["movies"] = Movie.objects.filter(genres__id=pk)
         return context
 
+
+class CreatorsTemplateView(TemplateView):
+    template_name = "creators.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["creators"] = People.objects.all()
+        return context
+
+
+
+class CreatorTemplateView(TemplateView):
+    template_name = "creator.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
+        context["creator"] = People.objects.get(id=pk)
+        return context

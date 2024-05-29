@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>List of actors</h2>
+<ul>
+    {% for actor in creators %}
+    {% if actor.acts.all.count %}
+        <li>
+          <a href="{%url 'creator' actor.id %}">{{ actor }} </a>
+        </li>
+    {% endif %}
+    {% endfor %}
+
+</ul>
+<h2>List of directors</h2>
+<ul>
+    {% for director in creators %}
+    {% if director.directs.all.count %}
+        <li>
+          <a href="{%url 'creator' director.id %}">{{ director }} </a>
+        </li>
+    {% endif %}
+    {% endfor %}
+
+</ul>
+{% endblock %}
